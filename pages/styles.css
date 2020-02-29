@@ -1,0 +1,375 @@
+/*
+html 
+  background: radial-gradient(#FFF176, #F57F17)
+  min-height: 100%
+  font-family: 'Roboto', sans-serif
+  
+
+.title
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 30px
+  color: #FF8F00
+  font-weight: 300
+  font-size: 24px
+  letter-spacing: 1px
+  
+.description
+  text-align: center
+  color: #FF8F00
+  margin-bottom: 30px
+
+input[type="text"],
+input[type="email"]
+  padding: 10px 20px
+  border: 1px solid #FF8F00
+  border-radius: 3px
+  display: block
+  width: 100%
+  margin-bottom: 20px
+  box-sizing: border-box
+  outline: none
+  
+  &:focus
+    border-color: #FF6F00
+  
+input[type="radio"]
+  margin-right: 10px
+
+label
+  margin-bottom: 20px
+  display: block
+  font-size: 18px
+  color: #FF8F00
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  padding: 20px 0
+  cursor: pointer
+  
+  &:first-child
+    margin-bottom: 0
+    border-bottom: none
+  
+  
+.button,
+.rerun-button
+  padding: 10px 20px
+  border-radius: 3px
+  background: #FF6F00
+  color: white
+  text-transform: uppercase
+  letter-spacing: 1px
+  display: inline-block
+  cursor: pointer
+  
+  &:hover
+    background: darken(#FF6F00, 5%)
+  
+  &.rerun-button
+    border: 1px solid rgba(255,255,255,0.6)
+    margin-bottom: 50px
+    box-shadow: 0px 10px 15px -6px rgba(0,0,0,0.2)
+    display: none
+  
+.text-center
+  text-align: center
+  
+.modal-wrap
+  max-width: 600px
+  margin: 50px auto
+  transition: transform 300ms ease-in-out
+
+.modal-header
+  height: 45px
+  background: white
+  border-bottom: 1px solid #ccc
+  display: flex
+  justify-content: center
+  align-items: center
+  
+  span
+    display: block
+    height: 12px
+    width: 12px
+    margin: 5px
+    border-radius: 50%
+    background: rgba(0,0,0,0.2)
+    
+    &.is-active
+      background: rgba(0,0,0,0.4)
+      background: #FF8F00
+
+.modal-bodies
+  position: relative
+  perspective: 1000px
+  
+.modal-body
+  background: white
+  padding: 40px 100px
+  box-shadow: 0px 50px 30px -30px rgba(0,0,0,0.3)
+  margin-bottom: 50px
+  position: absolute
+  top: 0
+  display: none
+  box-sizing: border-box
+  width: 100%
+  transform-origin: top left
+  
+  &.is-showing
+    display: block
+    
+    
+.animate-out
+  animation: out 600ms ease-in-out forwards
+
+.animate-in
+  animation: in 500ms ease-in-out forwards
+  display: block
+  
+.animate-up
+  transform: translateY(-500px) rotate(30deg)
+  
+    
+  
+@keyframes out
+  0%
+    transform: translateY(0px) rotate(0deg)
+  60%
+    transform: rotate(60deg)
+  100%
+    transform: translateY(800px) rotate(10deg)
+  
+  
+@keyframes in
+  0%
+    opacity: 0
+    transform: rotateX(-90deg)
+  100%
+    opacity: 1
+    transform: rotateX(0deg)
+    */
+
+    
+        
+        
+          nav {
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav > ul {
+    padding: 4px 16px;
+  }
+  li {
+    display: flex;
+    padding: 6px 8px;
+  }
+  a {
+    color: #067df7;
+    text-decoration: none;
+    font-size: 13px;
+  }
+        :global(body) {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+            Helvetica, sans-serif;
+        }
+        nav {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+        }
+        nav > ul {
+          padding: 4px 16px;
+        }
+        li {
+          display: flex;
+          padding: 6px 8px;
+        }
+        a {
+          color: #067df7;
+          text-decoration: none;
+          font-size: 13px;
+        }
+        body {
+          min-height: 100vh;
+          background: var(--bg);
+          color: var(--fg);
+          font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          background-image: radial-gradient(#ddd 1px,transparent 1px), radial-gradient(#ddd 1px,transparent 1px);
+          background-position: 0 0,25px 25px;
+          background-attachment: fixed;
+          background-size: 50px 50px;
+          overflow-x: hidden;
+      }
+      
+      html, body {
+          padding: 0;
+          margin: 0;
+          font-size: 20px;
+      }
+      * {
+          box-sizing: border-box;
+      }
+      
+      body {
+          display: block;
+          margin: 8px;
+      }
+      :root {
+          --gap-quarter: 0.25rem;
+          --gap-half: 0.5rem;
+          --gap: 1rem;
+          --gap-double: 2rem;
+          --bg: #fff;
+          --fg: #000;
+          --accents-1: #111;
+          --accents-2: #333;
+          --accents-3: #888;
+          --geist-foreground: #000;
+          --radius: 8px;
+          --font-sans: -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto', 'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans', 'Helvetica Neue',sans-serif;
+          --font-mono: Menlo,Monaco,Lucida Console,Liberation Mono, DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace;
+      }
+      user agent stylesheet
+      html {
+          color: -internal-root-color;
+      }
+      injected stylesheet
+      ::selection {
+          color: rgb(0, 0, 0);
+      }
+      injected stylesheet
+      ::selection {
+          background: rgb(120, 254, 224);
+      }
+      injected stylesheet
+      ::selection {
+          color: rgb(0, 0, 0);
+      }
+      injected stylesheet
+      ::selection {
+          background: rgb(120, 254, 224);
+      }
+      injected stylesheet
+      ::selection {
+          color: rgb(0, 0, 0);
+      }
+      injected stylesheet
+      ::selection {
+          background: rgb(120, 254, 224);
+      }
+      injected stylesheet
+      ::selection {
+          color: rgb(0, 0, 0);
+      }
+      injected stylesheet
+      ::selection {
+          background: rgb(120, 254, 224);
+      }
+      injected stylesheet
+      ::selection {
+          color: rgb(0, 0, 0);
+      }
+      injected stylesheet
+      ::selection {
+          background: rgb(120, 254, 224);
+      }
+      injected stylesheet
+      ::selection {
+          color: rgb(0, 0, 0);
+      }
+      injected stylesheet
+      ::selection {
+          background: rgb(120, 254, 224);
+      }
+  .hero {
+    width: 100%;
+    color: #333;
+  }
+  .title {
+    margin: 0;
+    width: 100%;
+    padding-top: 80px;
+    line-height: 1.15;
+    font-size: 48px;
+  }
+  .title,
+  .description {
+    text-align: center;
+  }
+  .row {
+    max-width: 880px;
+    margin: 80px auto 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .date {
+    height: 24px;
+    max-width: calc(100% - 32px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+  }
+  .date p {
+    text-align: center;
+  }
+  .date span {
+    width: 176px;
+    text-align: center;
+  }
+  @keyframes Loading {
+    0%{background-position:0% 50%};
+    50%{background-position:100% 50%};
+    100%{background-position:0% 50%};
+  }
+  .date .loading {
+    max-width: 100%;
+    height: 24px;
+    border-radius: 4px;
+    display: inline-block;
+    background: linear-gradient(270deg, #D1D1D1, #EAEAEA);
+    background-size: 200% 200%;
+    animation: Loading 2s ease infinite;
+  }
+  .card {
+    padding: 18px 18px 24px;
+    width: 220px;
+    text-align: left;
+    text-decoration: none;
+    color: #434343;
+    background: rgb(120, 254, 224);
+    border: 1px solid #9b9b9b;
+  }
+  .card:hover {
+    border-color: #067df7;
+  }
+  .card h3 {
+    margin: 0;
+    color: #067df7;
+    font-size: 18px;
+  }
+  .card p {
+    margin: 0;
+    padding: 12px 0 0;
+    font-size: 13px;
+    color: #333;
+  }
