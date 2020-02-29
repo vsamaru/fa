@@ -2,7 +2,7 @@ import "./styles.css"
 const faunadb = require('faunadb')
 
 // your secret hash
-const secret = 'fnADlv1J45ACE63FDj5vCIHWe8RfcHFS23XFdOC_'
+const secret = 'fnADlwpHgjACApCUzZ5-T43qD-0wf5O4u475OTUa'
 const q = faunadb.query
 const client = new faunadb.Client({ secret })
 
