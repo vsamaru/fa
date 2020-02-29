@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import TableRow from '../components/TableRow'
+import "./styles.css"
 
 export default () => {
   const [data, setData] = useState([])
